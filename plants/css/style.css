@@ -1,0 +1,75 @@
+body{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+._container{
+  max-width: 125rem;
+  padding: 0rem 1.5rem;
+  margin: 0 auto;
+}
+
+/* --------HEADER--------------- */
+
+.header{
+  background-color: #EDF2EC;
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 4.2rem 0rem;
+  align-items: center;
+}
+.menu__list{
+  display: flex;
+}
+.menu__item:not(:first-child){
+  margin-left: 4.6rem;
+}
+.menu__link{
+  font-family: 'Inika', serif;
+  color: #010201;
+  transition: all 0.2s;
+}
+.menu__link:hover{
+  color: #E06733;
+}
+/* --------section WELCOME------------- */
+
+.welcome{
+  padding: 6.2rem 0rem;
+}
+.welcome__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.welcome__content{
+  max-width: 54.9rem;
+}
+.welcome__title{
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  margin-bottom: 4.2rem;
+  color: #717171
+}
+.welcome__title span{
+  color: #499A18;
+}
+.welcome__text{
+  max-width: 52.5rem;
+  color: #636060;
+  margin-bottom: 4.8rem;
+}
+.welcome__btn{
+  display: block;
+  border: 2px solid #E06733;
+  border-radius: 1rem;
+  padding: 1.4rem 2.7rem;
+  color: #000000;
+  transition: all .3s;
+}
+.welcome__btn:hover{
+  background-color: #E06733;
+  color: #FFFFFF;
+}
