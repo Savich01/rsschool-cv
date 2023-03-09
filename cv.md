@@ -51,3 +51,7 @@ const func = (num) => {
 
 ***
 
+**My education**
+
+*Moscow Technical University of Communications and informatics*
+
