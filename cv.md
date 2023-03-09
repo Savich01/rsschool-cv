@@ -55,3 +55,7 @@ const func = (num) => {
 
 *Moscow Technical University of Communications and informatics*
 
+***
+
+**My English level:** *A0*
+
