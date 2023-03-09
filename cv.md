@@ -33,3 +33,21 @@
 
 ***
 
+**Code Exemples**
+
+* [link to my project - 1](https://github.com/Savich01/project-itlogia)
+
+* [link to my project - 1](https://github.com/Savich01/anim)
+
+```
+const func = (num) => {
+  if (num > 0) {
+    return num - 1;
+  }
+  return num + 1;
+}
+
+```
+
+***
+
