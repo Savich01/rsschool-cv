@@ -12,3 +12,9 @@
 
 ***
 
+**Information about yourself**
+
+*The main task is not to abandon training at RSshool, to get a good knowledge base and master the most promising technologies. In the future to get a job and continue your development in the direction of Junior Frontend Developer*
+
+***
+
