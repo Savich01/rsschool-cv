@@ -18,3 +18,18 @@
 
 ***
 
+**My Skills**
+
+1. Html 5
+2. css 3
+3. sass/scss
+4. flex-box
+5. Grid-Layout
+6. Git
+7. БЭМ
+8. VC Code
+9. Figma
+10. Adobe Photoshop
+
+***
+
