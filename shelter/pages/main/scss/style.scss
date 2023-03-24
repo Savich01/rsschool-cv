@@ -127,6 +127,35 @@ body{
   }
 }
 
+.main{
+  background-color: #fff;
+}
+
+.About{
+  &-inner{
+    display: flex;
+    padding: 8rem 0rem 10rem 0rem;
+    justify-content: space-evenly;
+    &__content{
+      max-width: 43rem;
+    }
+    &__title{
+      font-family: 'Georgia', sans-serif;
+      font-weight: 400;
+      max-width: 35rem;
+      font-size: 3.5rem;
+      line-height: 130%;
+      color: #545454;
+      margin-bottom: 2.5rem;
+    }
+    &__text{
+      color: #4C4C4C;
+      line-height: 160%;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
 
 
 
