@@ -303,6 +303,72 @@ body{
   }
 }
 
+.Inaddition{
+  background-color: #F6F6F6;
+  padding: 8rem 0rem 10rem 0rem;
+
+  &-inner{
+    max-width: 91.5rem;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  &-content{
+    margin-left: 3rem;
+    max-width: 38rem;
+  }
+
+  &-title{
+    font-family: 'Georgia', sans-serif;
+    font-weight: 400;
+    color: #545454;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    letter-spacing: 0.06em;
+    max-width: 30rem;
+    line-height: 130%;
+  }
+
+  &-subtitle{
+    font-family: 'Georgia', sans-serif;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 2rem;
+  }
+
+  &-item{
+    background-color: #F1CDB3;
+    display: inline-block;
+    max-width: 34.9rem;
+    padding: 1rem 1.5rem 1rem 5.5rem;
+    font-family: 'Georgia', sans-serif;
+    color: #545454;
+    font-size: 2rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    border-radius: .9rem;
+    position: relative;
+  }
+  &-item::after {
+    content: "";
+    position: absolute;
+    background: url('../img/credit-card.svg') 0 0 no-repeat;
+    width: 3rem;
+    height: 2.3rem;
+    left: 0;
+    margin-left: 10px;
+  }
+  &-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #B2B2B2;
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+}
+
 
 
 
