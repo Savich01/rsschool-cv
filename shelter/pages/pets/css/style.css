@@ -1,8 +1,113 @@
-/* line 1, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+@font-face {
+  font-family: 'Georgia', sans-serif;
+  src: url("../fonts/Georgia.woff2"), url("../fonts/Georgia.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial', sans-serif;
+  src: url("../fonts/ArialMT.woff2"), url("../fonts/ArialMT.woff");
+  font-display: swap;
+}
+
+/* line 16, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 *,
 *::after,
 *::before {
   box-sizing: border-box;
+}
+
+/* line 23, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 27, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* line 33, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.wrapper {
+  background-color: #F6F6F6;
+}
+
+/* line 37, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+._container {
+  max-width: 128rem;
+  padding: 0rem 4rem;
+  margin: 0 auto;
+}
+
+/* line 43, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.header {
+  background-color: #fff;
+}
+
+/* line 45, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.header-logo {
+  color: #292929;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+/* line 51, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.header-logo span {
+  font-family: 'Georgia', sans-serif;
+  display: block;
+  color: #545454;
+  font-size: 3.2rem;
+  line-height: 110%;
+  margin-bottom: 1rem;
+}
+
+/* line 61, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0rem;
+}
+
+/* line 70, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.menu-list {
+  display: flex;
+}
+
+/* line 73, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.menu-list__item {
+  border-bottom: .3rem solid transparent;
+  transition: all .3s;
+  position: relative;
+}
+
+/* line 79, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.menu-list__item:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
+/* line 83, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.menu-list__item:hover {
+  border-bottom: .3rem solid #F1CDB3;
+}
+
+/* line 87, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.menu-list__link {
+  color: #545454;
+  line-height: 160%;
+}
+
+/* line 91, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.menu-list__link:hover {
+  color: #292929;
+}
+
+/* line 96, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+.menu-list__itemactive {
+  border-bottom: .3rem solid #F1CDB3;
 }
 
 /*# sourceMappingURL=style.css.map */
