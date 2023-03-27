@@ -73,17 +73,25 @@ body{
     display: flex;
     &__item {
       border-bottom: .3rem solid transparent;
-      transition: all .2s;
+      transition: all .3s;
+      position: relative;
     }
     &__item:not(:last-child) {
       margin-right: 3.5rem;
     }
-    &__item:active {
+    &__item:hover {
       border-bottom: .3rem solid #F1CDB3;
     }
     &__link {
-      color: #FAFAFA;
+      color: #CDCDCD;
       line-height: 160%;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+    &__itemactive {
+      border-bottom: .3rem solid #F1CDB3;
     }
   }
 }
@@ -121,6 +129,19 @@ body{
     letter-spacing: 0.06em;
     line-height: 130%;
     color: #292929;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+      transform: translateY(-.3rem);
+      background-color: #FDDCC4;
+      box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 1));
+    }
+    &:active {
+      transform: translateY(.1rem);
+      box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, .3))
+    }
   }
   &-img{
     padding-top: 10rem;
@@ -184,16 +205,28 @@ body{
     letter-spacing: 0.06em;
     border: none;
     cursor: pointer;
-  }
+    transition: all .2s;
 
+    &:hover {
+      transform: translateY(-.3rem);
+      background-color: #FDDCC4;
+      box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 1));
+    }
+    &:active {
+      transform: translateY(.1rem);
+      box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, .3))
+    }
+  }
+  
   &-inner{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 6rem;
     position: relative;
   }
+
   &-inner::after {
-    content: " ";
+    content: "";
     position: absolute;
     width: 52px;
     height: 52px;
@@ -206,6 +239,7 @@ body{
     background-position: center;
     cursor: pointer;
   }
+
     &-inner::before {
       content: "";
       position: absolute;
@@ -231,6 +265,12 @@ body{
   overflow: hidden;
   min-height: 43.5rem;
   cursor: pointer;
+  transition: all .3s;
+  border-radius: .9rem;
+
+  &:hover {
+    background-color: #fff;
+  }
 }
 .OurFriends-card__title{
   font-size: 2rem;
@@ -247,7 +287,17 @@ body{
   border-radius: 10rem;
   cursor: pointer;
   background-color: transparent;
-  border: 2px solid #F1CDB3
+  border: 2px solid #F1CDB3;
+  transition: all .2s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+  }
 }
 
 .Help{
