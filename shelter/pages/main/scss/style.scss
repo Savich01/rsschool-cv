@@ -14,6 +14,10 @@
 
 // --------------------------
 
+  :root {
+    scroll-behavior: smooth;
+  }
+
 *,
 *::after,
 *::before {
@@ -180,6 +184,9 @@ body{
 .OurFriends{
   padding: 8rem 0rem 10rem 0rem;
   background-color: #F6F6F6;
+  &-container {
+    position: relative;
+  }
   &-title{
     font-family: 'Georgia', sans-serif;
     font-weight: 400;
@@ -193,8 +200,11 @@ body{
     color: #545454;
   }
 
+
   &-button{
     display: block;
+    max-width: 26.1rem;
+    text-align: center;
     margin: 0 auto;
     background-color: #F1CDB3;
     padding: 1.5rem 4.5rem;
@@ -217,7 +227,7 @@ body{
       box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, .3))
     }
   }
-  
+
   &-inner{
     display: flex;
     justify-content: space-evenly;
@@ -225,35 +235,42 @@ body{
     position: relative;
   }
 
-  &-inner::after {
-    content: "";
-    position: absolute;
-    width: 52px;
-    height: 52px;
+
+  .OurFriends-btn__left::after {
+    content: '';
+    display: inline-block;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 100%;
     border: 2px solid #F1CDB3;
-    border-radius: 100px;
-    left: 0;
+    position: absolute;
+    z-index: 2;
     top: 50%;
+    left: 0;
     transform: translateY(-50%);
     background: url('../img/Arrow-left.svg') 0 0 no-repeat;
+    width: 52px;
+    height: 52px;
     background-position: center;
     cursor: pointer;
   }
 
-    &-inner::before {
-      content: "";
-      position: absolute;
-      width: 52px;
-      height: 52px;
-      border: 2px solid #F1CDB3;
-      border-radius: 100px;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background: url('../img/Arrow-right.svg') 0 0 no-repeat;
-      background-position: center;
-      cursor: pointer;
-    }
+  .OurFriends-btn__right::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 100%;
+    border: 2px solid #F1CDB3;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: url('../img/Arrow-right.svg') 0 0 no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
 }
 
 .OurFriends-card__item{

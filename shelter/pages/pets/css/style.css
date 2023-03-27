@@ -11,42 +11,47 @@
 }
 
 /* line 16, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+:root {
+  scroll-behavior: smooth;
+}
+
+/* line 21, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
 
-/* line 23, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 28, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 27, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 32, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 body {
   font-family: 'Arial', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-/* line 33, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 38, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .wrapper {
   background-color: #F6F6F6;
 }
 
-/* line 37, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 42, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 ._container {
   max-width: 128rem;
   padding: 0rem 4rem;
   margin: 0 auto;
 }
 
-/* line 43, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 48, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .header {
   background-color: #fff;
 }
 
-/* line 45, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 50, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .header-logo {
   color: #292929;
   font-size: 1.3rem;
@@ -54,7 +59,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* line 51, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 56, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .header-logo span {
   font-family: 'Georgia', sans-serif;
   display: block;
@@ -64,7 +69,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* line 61, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 66, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .header-inner {
   display: flex;
   align-items: center;
@@ -72,51 +77,51 @@ body {
   padding: 3rem 0rem;
 }
 
-/* line 70, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 75, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .menu-list {
   display: flex;
 }
 
-/* line 73, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 78, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .menu-list__item {
   border-bottom: .3rem solid transparent;
   transition: all .3s;
   position: relative;
 }
 
-/* line 79, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 84, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .menu-list__item:not(:last-child) {
   margin-right: 3.5rem;
 }
 
-/* line 83, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 88, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .menu-list__item:hover {
   border-bottom: .3rem solid #F1CDB3;
 }
 
-/* line 87, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 92, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .menu-list__link {
   color: #545454;
   line-height: 160%;
 }
 
-/* line 91, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 96, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .menu-list__link:hover {
   color: #292929;
 }
 
-/* line 96, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 101, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .menu-list__itemactive {
   border-bottom: .3rem solid #F1CDB3;
 }
 
-/* line 102, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 107, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends {
   padding: 8rem 0rem 10rem 0rem;
   background-color: #F6F6F6;
 }
 
-/* line 106, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 111, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-title {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -130,7 +135,7 @@ body {
   color: #545454;
 }
 
-/* line 119, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 124, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-button {
   display: block;
   margin: 0 auto;
@@ -146,20 +151,20 @@ body {
   transition: all .2s;
 }
 
-/* line 133, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 138, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-button:hover {
   transform: translateY(-0.3rem);
   background-color: #FDDCC4;
   box-shadow: 0rem 0.4rem 0.4rem black;
 }
 
-/* line 139, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 144, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-button:active {
   transform: translateY(0.1rem);
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
-/* line 145, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 150, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-inner {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -170,7 +175,7 @@ body {
   position: relative;
 }
 
-/* line 156, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 161, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-card__item {
   max-width: 27rem;
   display: flex;
@@ -184,12 +189,12 @@ body {
   border-radius: .9rem;
 }
 
-/* line 168, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 173, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-card__item:hover {
   background-color: #fff;
 }
 
-/* line 173, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 178, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-card__title {
   font-size: 2rem;
   font-family: 'Georgia', sans-serif;
@@ -200,7 +205,7 @@ body {
   margin-bottom: 3rem;
 }
 
-/* line 183, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 188, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-card__btn {
   display: inline-block;
   padding: 1.5rem 4.5rem;
@@ -211,18 +216,18 @@ body {
   transition: all .2s;
 }
 
-/* line 192, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 197, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-card__btn:focus {
   outline: none;
 }
 
-/* line 196, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 201, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-card__btn:hover {
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
 }
 
-/* line 201, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 206, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-btn {
   max-width: 34rem;
   margin: 0 auto;
@@ -231,7 +236,7 @@ body {
   justify-content: space-between;
 }
 
-/* line 209, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 214, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-btn__button {
   display: inline-block;
   border: 2px solid #CDCDCD;
@@ -243,7 +248,7 @@ body {
   position: relative;
 }
 
-/* line 220, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 225, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-btn__buttonarrowleft2::before {
   content: '';
   position: absolute;
@@ -255,7 +260,7 @@ body {
   transform: translateY(-50%);
 }
 
-/* line 231, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 236, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-btn__buttonarrowleft::after {
   content: '';
   position: absolute;
@@ -267,7 +272,7 @@ body {
   left: 1.6rem;
 }
 
-/* line 241, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 246, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-btn__buttoncol {
   background-color: #F1CDB3;
   border: none;
@@ -278,7 +283,7 @@ body {
   color: #292929;
 }
 
-/* line 250, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 255, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-btn__buttonarrowright::before {
   content: '';
   position: absolute;
@@ -290,12 +295,12 @@ body {
   left: 2rem;
 }
 
-/* line 260, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 265, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-btn__buttonarrowright {
   border: 2px solid #F1CDB3;
 }
 
-/* line 264, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 269, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-btn__buttonarrowright2::before {
   content: '';
   position: absolute;
@@ -306,12 +311,12 @@ body {
   left: 1.5rem;
 }
 
-/* line 273, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 278, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .OurFriends-btn__buttonarrowright2 {
   border: 2px solid #F1CDB3;
 }
 
-/* line 278, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 283, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer {
   background: url("../img/footer-bg02.jpg") 0 0 no-repeat;
   background-position: center;
@@ -319,20 +324,20 @@ body {
   padding: 6rem 0rem 0rem 0rem;
 }
 
-/* line 284, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 289, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-row {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 289, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 294, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item {
   max-width: 30rem;
   display: flex;
   flex-direction: column;
 }
 
-/* line 294, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 299, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__title {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -343,7 +348,7 @@ body {
   margin-bottom: 2rem;
 }
 
-/* line 304, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 309, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__email {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -357,7 +362,7 @@ body {
   position: relative;
 }
 
-/* line 316, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 321, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__email::after {
   content: "";
   position: absolute;
@@ -369,7 +374,7 @@ body {
   transform: translateY(-50%);
 }
 
-/* line 328, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 333, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__tel {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -382,7 +387,7 @@ body {
   position: relative;
 }
 
-/* line 339, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 344, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__tel::after {
   content: "";
   position: absolute;
@@ -394,12 +399,12 @@ body {
   transform: translateY(-50%);
 }
 
-/* line 350, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 355, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__titleBottom {
   margin-bottom: 1.7rem;
 }
 
-/* line 353, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 358, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__city {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -413,7 +418,7 @@ body {
   position: relative;
 }
 
-/* line 365, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 370, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__city::after {
   content: "";
   position: absolute;
@@ -425,7 +430,7 @@ body {
   transform: translateY(-50%);
 }
 
-/* line 377, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 382, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__street {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -438,7 +443,7 @@ body {
   position: relative;
 }
 
-/* line 388, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
+/* line 393, ../../../../rsschool-cv/shelter/pages/pets/scss/style.scss */
 .footer-item__street::after {
   content: "";
   position: absolute;
