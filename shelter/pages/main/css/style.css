@@ -62,6 +62,13 @@ html {
   }
 }
 
+@media (max-width: 420px) {
+  /* line 29, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  html {
+    font-size: 40%;
+  }
+}
+
 @media (min-width: 1800px) {
   /* line 29, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   html {
@@ -69,33 +76,33 @@ html {
   }
 }
 
-/* line 51, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 54, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 body {
   font-family: 'Arial', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-/* line 57, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 60, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .wrapper {
   background-color: #F6F6F6;
 }
 
-/* line 61, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 64, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 ._container {
   max-width: 128rem;
   padding: 0rem 4rem;
   margin: 0 auto;
 }
 
-/* line 67, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 70, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .header {
   background: url("../img/bg-01.jpg") 0 0 no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-/* line 73, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 76, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .header-logo {
   color: #fff;
   font-size: 1.3rem;
@@ -103,7 +110,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* line 78, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 81, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .header-logo span {
   font-family: 'Georgia', sans-serif;
   display: block;
@@ -113,7 +120,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* line 88, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 91, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .header-inner {
   display: flex;
   align-items: center;
@@ -121,45 +128,100 @@ body {
   padding-top: 3rem;
 }
 
-/* line 96, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 98, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+.burger-box {
+  width: 3rem;
+  height: 2.2rem;
+  position: relative;
+}
+
+/* line 103, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+.burger-box {
+  display: none;
+}
+
+@media (max-width: 420px) {
+  /* line 103, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .burger-box {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* line 111, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+.burger-box1 {
+  position: absolute;
+  border-top: 1px solid #fff;
+  width: 3rem;
+  height: .2rem;
+  top: 0;
+}
+
+/* line 118, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+.burger-box2 {
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  width: 3rem;
+  height: .2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 126, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+.burger-box3 {
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  width: 3rem;
+  height: .2rem;
+  bottom: 0;
+}
+
+@media (max-width: 420px) {
+  /* line 134, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .menu {
+    display: none;
+  }
+}
+
+/* line 138, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .menu-list {
   display: flex;
 }
 
-/* line 98, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 140, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .menu-list__item {
   border-bottom: .3rem solid transparent;
   transition: all .3s;
   position: relative;
 }
 
-/* line 103, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 145, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .menu-list__item:not(:last-child) {
   margin-right: 3.5rem;
 }
 
-/* line 106, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 148, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .menu-list__item:hover {
   border-bottom: .3rem solid #F1CDB3;
 }
 
-/* line 109, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 151, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .menu-list__link {
   color: #CDCDCD;
   line-height: 160%;
 }
 
-/* line 113, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 155, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .menu-list__link:hover {
   color: #fff;
 }
 
-/* line 117, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 159, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .menu-list__itemactive {
   border-bottom: .3rem solid #F1CDB3;
 }
 
-/* line 124, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 166, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Notonly-inner {
   display: flex;
   align-items: center;
@@ -167,28 +229,47 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* line 124, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 166, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .Notonly-inner {
     display: block;
     width: 100%;
   }
 }
 
-/* line 133, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 420px) {
+  /* line 166, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .Notonly-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* line 181, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Notonly-content {
   max-width: 46rem;
   padding-top: 16.3rem;
 }
 
 @media (max-width: 768px) {
-  /* line 133, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 181, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .Notonly-content {
     margin: 0 auto;
     padding-top: 6rem;
   }
 }
 
-/* line 141, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 420px) {
+  /* line 181, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .Notonly-content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* line 195, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Notonly-title {
   font-family: 'Georgia', sans-serif;
   max-width: 39rem;
@@ -198,14 +279,14 @@ body {
   font-size: 4.4rem;
 }
 
-/* line 149, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 203, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Notonly-text {
   color: #CDCDCD;
   line-height: 160%;
   margin-bottom: 4.2rem;
 }
 
-/* line 154, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 208, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Notonly-btn {
   display: block;
   max-width: 20.7rem;
@@ -223,26 +304,26 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* line 154, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 208, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .Notonly-btn {
     margin: 0 auto;
   }
 }
 
-/* line 172, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 226, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Notonly-btn:hover {
   transform: translateY(-0.3rem);
   background-color: #FDDCC4;
   box-shadow: 0rem 0.4rem 0.4rem black;
 }
 
-/* line 177, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 231, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Notonly-btn:active {
   transform: translateY(0.1rem);
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
-/* line 182, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 236, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Notonly-img {
   padding-top: 10rem;
   max-width: 100%;
@@ -250,26 +331,26 @@ body {
 }
 
 @media (max-width: 1260px) {
-  /* line 182, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 236, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .Notonly-img {
     max-width: 60%;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 182, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 236, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .Notonly-img {
     margin: 0rem 0rem 0rem 20rem;
     max-width: 70%;
   }
 }
 
-/* line 196, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 250, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .main {
   background-color: #fff;
 }
 
-/* line 201, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 255, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .About-inner {
   display: flex;
   padding: 8rem 0rem 10rem 0rem;
@@ -277,26 +358,41 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* line 201, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 255, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .About-inner {
     flex-direction: column;
   }
 }
 
-/* line 208, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 420px) {
+  /* line 255, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .About-inner {
+    padding: 2rem 0rem 5rem 0rem;
+  }
+}
+
+/* line 266, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .About-inner__content {
   max-width: 43rem;
 }
 
 @media (max-width: 768px) {
-  /* line 208, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 266, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .About-inner__content {
     margin: 0 auto;
     margin-bottom: 8rem;
   }
 }
 
-/* line 216, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 768px) and (max-width: 420px) {
+  /* line 266, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .About-inner__content {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}
+
+/* line 278, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .About-inner__title {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -307,7 +403,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-/* line 225, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 287, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .About-inner__text {
   color: #4C4C4C;
   line-height: 160%;
@@ -315,7 +411,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* line 230, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 292, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .About-inner__img {
     order: 1;
     max-width: 30%;
@@ -323,18 +419,25 @@ body {
   }
 }
 
-/* line 240, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 768px) and (max-width: 420px) {
+  /* line 292, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .About-inner__img {
+    max-width: 50%;
+  }
+}
+
+/* line 305, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends {
   padding: 8rem 0rem 10rem 0rem;
   background-color: #F6F6F6;
 }
 
-/* line 243, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 308, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-container {
   position: relative;
 }
 
-/* line 246, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 311, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-title {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -348,7 +451,7 @@ body {
   color: #545454;
 }
 
-/* line 260, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 325, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-button {
   display: block;
   max-width: 26.1rem;
@@ -364,44 +467,62 @@ body {
   border: none;
   cursor: pointer;
   transition: all .2s;
+  margin-top: 3rem;
 }
 
-/* line 277, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 343, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-button:hover {
   transform: translateY(-0.3rem);
   background-color: #FDDCC4;
   box-shadow: 0rem 0.4rem 0.4rem black;
 }
 
-/* line 282, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 348, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-button:active {
   transform: translateY(0.1rem);
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
 }
 
-/* line 288, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 354, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-inner {
   display: flex;
-  width: 100rem;
+  width: 100%;
   justify-content: space-around;
   margin-bottom: 6rem;
+  align-items: center;
 }
 
 @media (max-width: 992px) {
-  /* line 288, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 354, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .OurFriends-inner {
     justify-content: space-evenly;
   }
 }
 
-/* line 299, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
-.OurFriends .OurFriends-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media (max-width: 600px) {
+  /* line 354, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends-inner {
+    align-items: flex-end;
+  }
 }
 
-/* line 305, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 369, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+.OurFriends .OurFriends-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  /* line 369, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends .OurFriends-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+/* line 383, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends .OurFriends-btn__left {
   display: inline-block;
   width: 5.2rem;
@@ -412,18 +533,54 @@ body {
   transition: all .2s;
 }
 
-/* line 314, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 992px) {
+  /* line 383, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends .OurFriends-btn__left {
+    width: 5.5rem;
+    height: 5.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 383, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends .OurFriends-btn__left {
+    width: 7rem;
+    height: 6.2rem;
+    left: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 383, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends .OurFriends-btn__left {
+    width: 9rem;
+    height: 9.2rem;
+    position: absolute;
+    left: 35%;
+  }
+}
+
+@media (max-width: 420px) {
+  /* line 383, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends .OurFriends-btn__left {
+    width: 7rem;
+    height: 7.2rem;
+    left: 25%;
+  }
+}
+
+/* line 413, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends .OurFriends-btn__left:hover {
   background-color: #F1CDB3;
 }
 
-/* line 318, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 417, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends .OurFriends-btn__left-After {
   background: url("../img/Arrow-left.svg") 0 0 no-repeat;
   background-position: center;
 }
 
-/* line 323, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 422, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends .OurFriends-btn__right {
   display: inline-block;
   width: 5.2rem;
@@ -434,18 +591,54 @@ body {
   transition: all .2s;
 }
 
-/* line 332, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 992px) {
+  /* line 422, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends .OurFriends-btn__right {
+    width: 5.5rem;
+    height: 5.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 422, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends .OurFriends-btn__right {
+    width: 7rem;
+    height: 6.2rem;
+    right: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 422, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends .OurFriends-btn__right {
+    width: 9rem;
+    height: 9.2rem;
+    position: absolute;
+    right: 35%;
+  }
+}
+
+@media (max-width: 420px) {
+  /* line 422, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends .OurFriends-btn__right {
+    width: 7rem;
+    height: 7.2rem;
+    right: 25%;
+  }
+}
+
+/* line 451, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends .OurFriends-btn__right:hover {
   background-color: #F1CDB3;
 }
 
-/* line 336, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 455, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends .OurFriends-btn__left-Before {
   background: url("../img/Arrow-right.svg") 0 0 no-repeat;
   background-position: center;
 }
 
-/* line 342, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 461, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-card__item {
   width: 27rem;
   display: flex;
@@ -458,26 +651,41 @@ body {
   border-radius: .9rem;
 }
 
-/* line 353, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 461, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends-card__item {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+}
+
+/* line 476, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-card__item:hover {
   background-color: #fff;
 }
 
 @media (max-width: 992px) {
-  /* line 342, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 461, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .OurFriends-card__item {
     max-width: 40rem;
   }
 }
 
+@media (max-width: 600px) {
+  /* line 484, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .OurFriends-card__itemJen {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
-  /* line 362, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 490, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .OurFriends-card__itemwoody {
     display: none;
   }
 }
 
-/* line 368, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 496, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-card__title {
   font-size: 2rem;
   font-family: 'Georgia', sans-serif;
@@ -488,7 +696,7 @@ body {
   margin-bottom: 3rem;
 }
 
-/* line 377, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 505, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-card__btn {
   display: inline-block;
   padding: 1.5rem 4.5rem;
@@ -502,36 +710,36 @@ body {
 }
 
 @media (max-width: 900px) {
-  /* line 377, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 505, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .OurFriends-card__btn {
     margin-bottom: 3rem;
   }
 }
 
 @media (max-width: 992px) {
-  /* line 377, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 505, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .OurFriends-card__btn {
     font-size: 1.7rem;
   }
 }
 
-/* line 395, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 523, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-card__btn:focus {
   outline: none;
 }
 
-/* line 399, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 527, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .OurFriends-card__btn:hover {
   background-color: #FDDCC4;
   border: 2px solid #FDDCC4;
 }
 
-/* line 405, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 533, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Help {
   padding: 8rem 0rem 10rem 0rem;
 }
 
-/* line 408, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 536, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Help-title {
   max-width: 31rem;
   display: block;
@@ -546,7 +754,7 @@ body {
   line-height: 130%;
 }
 
-/* line 422, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 550, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Help-row {
   display: flex;
   width: 100%;
@@ -560,7 +768,7 @@ body {
 }
 
 @media (max-width: 900px) {
-  /* line 422, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 550, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .Help-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -568,17 +776,26 @@ body {
   }
 }
 
-/* line 439, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
-.Help-row__item {
-  max-width: 20rem;
+@media (max-width: 420px) {
+  /* line 550, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .Help-row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    align-items: center;
+  }
 }
 
-/* line 443, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 572, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+.Help-row__item {
+  max-width: 30rem;
+}
+
+/* line 576, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Help-row__img {
   margin-bottom: 2.5rem;
 }
 
-/* line 447, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 580, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Help-row__text {
   font-family: 'Georgia', sans-serif;
   font-size: 20px;
@@ -586,20 +803,20 @@ body {
   color: #545454;
 }
 
-/* line 457, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 590, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Inaddition {
   background-color: #F6F6F6;
   padding: 8rem 0rem 10rem 0rem;
 }
 
 @media (max-width: 992px) {
-  /* line 457, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 590, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .Inaddition {
     padding: 5rem 0rem 7rem 0rem;
   }
 }
 
-/* line 464, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 597, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Inaddition-inner {
   max-width: 91.5rem;
   display: flex;
@@ -608,27 +825,30 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 464, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 597, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .Inaddition-inner {
     flex-direction: column;
   }
 }
 
-/* line 475, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 608, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Inaddition-content {
-  margin-left: 3rem;
-  max-width: 38rem;
+  margin-left: 2rem;
 }
 
 @media (max-width: 992px) {
-  /* line 475, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 608, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .Inaddition-content {
     order: -1;
     margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
-/* line 485, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 621, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Inaddition-title {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -640,7 +860,16 @@ body {
   line-height: 130%;
 }
 
-/* line 496, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 992px) {
+  /* line 621, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .Inaddition-title {
+    font-size: 3.6rem;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* line 637, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Inaddition-subtitle {
   font-family: 'Georgia', sans-serif;
   line-height: 110%;
@@ -649,13 +878,34 @@ body {
   margin-bottom: 2rem;
 }
 
-/* line 504, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 992px) {
+  /* line 637, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .Inaddition-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    text-align: center;
+  }
+}
+
+/* line 650, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Inaddition-item {
   margin-left: 2rem;
   color: #545454;
 }
 
-/* line 508, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 654, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+.Inaddition-img {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  /* line 654, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .Inaddition-img {
+    max-width: 80%;
+  }
+}
+
+/* line 661, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Inaddition-item__row {
   max-width: 100%;
   display: flex;
@@ -668,18 +918,28 @@ body {
   line-height: 115%;
   letter-spacing: 0.06em;
   border-radius: .9rem;
+  margin-bottom: 2rem;
 }
 
-/* line 522, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 676, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .Inaddition-text {
   font-size: 1.2rem;
   line-height: 1.8rem;
   color: #B2B2B2;
   font-style: italic;
   margin-bottom: 2rem;
+  max-width: 35rem;
+  letter-spacing: 0.06em;
 }
 
-/* line 531, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 420px) {
+  /* line 676, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .Inaddition-text {
+    margin-bottom: 0rem;
+  }
+}
+
+/* line 692, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer {
   background: url("../img/footer-bg02.jpg") 0 0 no-repeat;
   background-position: center;
@@ -687,21 +947,41 @@ body {
   padding: 6rem 0rem 0rem 0rem;
 }
 
-/* line 537, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+/* line 698, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+.footer-img {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  /* line 698, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-img {
+    max-width: 50%;
+  }
+}
+
+/* line 705, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-row {
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: 992px) {
-  /* line 537, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 705, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .footer-row {
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
-/* line 547, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 705, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* line 719, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item {
   max-width: 30rem;
   display: flex;
@@ -709,14 +989,22 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 547, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 719, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .footer-item {
     max-width: 40rem;
     margin-bottom: 6.5rem;
   }
 }
 
-/* line 557, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 719, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item {
+    max-width: 50rem;
+    margin-bottom: 6.5rem;
+  }
+}
+
+/* line 733, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__title {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -728,13 +1016,20 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 557, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 733, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .footer-item__title {
     margin-bottom: 3.5rem;
   }
 }
 
-/* line 571, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 733, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__title {
+    margin-bottom: 3rem;
+  }
+}
+
+/* line 750, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__email {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -748,7 +1043,15 @@ body {
   position: relative;
 }
 
-/* line 585, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 750, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__email {
+    padding-left: 10rem;
+    font-size: 3rem;
+  }
+}
+
+/* line 769, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__email::after {
   content: "";
   position: absolute;
@@ -761,14 +1064,22 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 585, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 769, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .footer-item__email::after {
     width: 5rem;
     height: 4rem;
   }
 }
 
-/* line 602, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 769, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__email::after {
+    width: 10rem;
+    height: 6rem;
+  }
+}
+
+/* line 790, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__tel {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -781,7 +1092,15 @@ body {
   position: relative;
 }
 
-/* line 613, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 790, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__tel {
+    padding-left: 10rem;
+    font-size: 3rem;
+  }
+}
+
+/* line 806, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__tel::after {
   content: "";
   position: absolute;
@@ -794,19 +1113,34 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 613, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 806, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .footer-item__tel::after {
     width: 5rem;
     height: 4rem;
   }
 }
 
-/* line 629, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 806, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__tel::after {
+    width: 10rem;
+    height: 7rem;
+  }
+}
+
+/* line 826, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__titleBottom {
   margin-bottom: 1.7rem;
 }
 
-/* line 632, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 826, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__titleBottom {
+    max-width: 40rem;
+  }
+}
+
+/* line 832, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__city {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -820,7 +1154,16 @@ body {
   position: relative;
 }
 
-/* line 644, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 832, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__city {
+    font-size: 12px;
+    padding-left: 30px;
+    margin-bottom: 4rem;
+  }
+}
+
+/* line 850, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__city::after {
   content: "";
   position: absolute;
@@ -833,14 +1176,22 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 644, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 850, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .footer-item__city::after {
     width: 3rem;
     height: 4rem;
   }
 }
 
-/* line 661, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 850, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__city::after {
+    width: 5rem;
+    height: 7rem;
+  }
+}
+
+/* line 873, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__street {
   font-family: 'Georgia', sans-serif;
   font-weight: 400;
@@ -853,7 +1204,15 @@ body {
   position: relative;
 }
 
-/* line 672, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+@media (max-width: 600px) {
+  /* line 873, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__street {
+    font-size: 12px;
+    padding-left: 30px;
+  }
+}
+
+/* line 891, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
 .footer-item__street::after {
   content: "";
   position: absolute;
@@ -866,10 +1225,18 @@ body {
 }
 
 @media (max-width: 992px) {
-  /* line 672, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  /* line 891, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
   .footer-item__street::after {
     width: 3rem;
     height: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 891, ../../../../rsschool-cv/shelter/pages/main/scss/style.scss */
+  .footer-item__street::after {
+    width: 6rem;
+    height: 7rem;
   }
 }
 
