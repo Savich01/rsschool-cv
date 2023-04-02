@@ -1,3 +1,5 @@
+@import 'mixins.scss';
+
 @font-face {
   font-family: 'Georgia', sans-serif;
   src: url('../fonts/Georgia.woff2'),
@@ -27,6 +29,34 @@
 
 html {
   font-size: 62.5%;
+  
+    @include respond(tab-land) {
+      font-size: 60.25%;
+    }
+  
+    @include respond(tab-phone) {
+      font-size: 60%;
+    }
+  
+    @include respond(tab-port) {
+      font-size: 55%;
+    }
+  
+    @include respond(screen) {
+      font-size: 50%;
+    }
+  
+    @include respond(phone) {
+      font-size: 50%;
+    }
+  
+    @include respond(phonescreen) {
+      font-size: 40%;
+    }
+  
+    @include respond(big-screen) {
+      font-size: 75%;
+    }
 }
 
 body {
@@ -70,8 +100,50 @@ body {
     padding: 3rem 0rem;
   }
 }
+.burger-box {
+  width: 3rem;
+  height: 2.2rem;
+  position: relative;
+}
 
+.burger-box {
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.burger-box1 {
+  position: absolute;
+  border-top: 1px solid #292929;
+  width: 3rem;
+  height: .2rem;
+  top: 0;
+}
+
+.burger-box2 {
+  position: absolute;
+  border-bottom: 1px solid #292929;
+  width: 3rem;
+  height: .2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger-box3 {
+  position: absolute;
+  border-bottom: 1px solid #292929;
+  width: 3rem;
+  height: .2rem;
+  bottom: 0;
+
+}
 .menu {
+  @include respond(phone) {
+    display: none;
+  }
   &-list {
     display: flex;
 
@@ -155,11 +227,23 @@ body {
     justify-content: space-evenly;
     margin-bottom: 6rem;
     position: relative;
+    @include respond(tab-phone) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include respond(screen) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      grid-column-gap: 0rem;
+    }
+    @include respond(phone) {
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      grid-column-gap: 0rem;
+    }
   }
 }
 
 .OurFriends-card__item {
-  max-width: 27rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,10 +253,44 @@ body {
   cursor: pointer;
   transition: all .3s;
   border-radius: .9rem;
+  @include respond(tab-land) {
+      max-width: 26rem;
+  }
+  @include respond(tab-phone) {
+      max-width: 26rem;
+  }
+  @include respond(screen) {
+    max-width: 32rem;
+  }
 
   &:hover {
     background-color: #fff;
   }
+}
+.OurFriends-card__itemScarlett {
+  @include respond(tab-phone) {
+     display: none;
+  }
+}
+.OurFriends-card__itemFreddie {
+  @include respond(tab-phone) {
+     display: none;
+  }
+}
+.OurFriends-card__itemSophia {
+  @include respond(phone) {
+      display: none;
+    }
+}
+.OurFriends-card__itemTimmy {
+  @include respond(phone) {
+      display: none;
+    }
+}
+.OurFriends-card__itemCharly {
+  @include respond(phone) {
+      display: none;
+    }
 }
 
 .OurFriends-card__title {
@@ -193,6 +311,7 @@ body {
   background-color: transparent;
   border: 2px solid #F1CDB3;
   transition: all .2s;
+  margin-bottom: 3rem;
 
   &:focus {
     outline: none;
@@ -204,79 +323,50 @@ body {
   }
 }
 .OurFriends-btn {
-  max-width: 34rem;
-  margin: 0 auto;
-  text-align: center;
   display: flex;
   justify-content: space-between;
-
-
+  max-width: 34rem;
+  margin: 0 auto;
   &__button {
     display: inline-block;
-    border: 2px solid #CDCDCD;
-    background-color: #fff;
-    border-radius: 100%;
     width: 5.2rem;
     height: 5.2rem;
-    cursor: pointer;
-    position: relative;
-  }
-
-  &__buttonarrowleft2::before {
-      content: '';
-      position: absolute;
-      width: 2.7rem;
-      height: 1rem;
-      background: url('../img/arrow-left2.svg') 0 0 no-repeat;
-      top: 50%;
-      left: 1rem;
-      transform: translateY(-50%);
-    }
-
-  &__buttonarrowleft::after {
-    content: '';
-    position: absolute;
-    background: url('../img/arrow-left.svg') 0 0 no-repeat;
-    width: 1.3rem;
-    height: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 1.6rem;
-  }
-  &__buttoncol {
-    background-color: #F1CDB3;
-    border: none;
-    font-family: 'Georgia', sans-serif;
+    border: 2px solid #CDCDCD;
+    border-radius: 100%;
     font-size: 2rem;
-    line-height: 115%;
-    letter-spacing: 0.06em;
-    color: #292929;
+    background-color: transparent;
+    font-family: 'Georgia', sans-serif;
+    color: #CDCDCD;
   }
-  &__buttonarrowright::before {
-    content: '';
-    position: absolute;
-    width: 1.3rem;
-    height: 1rem;
-    background: url('../img/arrw-right.svg') 0 0 no-repeat;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 2rem;
-  }
-  &__buttonarrowright{
+  &__buttonarrowright {
     border: 2px solid #F1CDB3;
-  }
-
-  &__buttonarrowright2::before{
-    content: '';
-    position: absolute;
-    width: 2.7rem;
-    height: 1rem;
-    background: url('../img/arrow-right2.svg') 0 0 no-repeat;
-    top: 40%;
-    left: 1.5rem;
+    color: #292929;
+    transition: all .2s;
+    cursor: pointer;
+    &:hover {
+      background-color: #F1CDB3;
+    }
   }
   &__buttonarrowright2 {
     border: 2px solid #F1CDB3;
+    color: #292929;
+    transition: all .2s;
+    cursor: pointer;
+    &:hover {
+      background-color: #F1CDB3;
+    }
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.2rem;
+    height: 5.2rem;
+    border-radius: 100%;
+    font-size: 2rem;
+    background-color: #F1CDB3;
+    font-family: 'Georgia', sans-serif;
   }
 }
 
@@ -286,15 +376,40 @@ body {
   background-size: cover;
   padding: 6rem 0rem 0rem 0rem;
 
+  &-img {
+    display: block;
+    @include respond(phone) {
+      max-width: 50%;
+    }
+  }
+
   &-row {
     display: flex;
     justify-content: space-between;
+
+    @include respond(tab-phone) {
+      flex-wrap: wrap;
+      justify-content: center;
+    } 
+    @include respond(phone) {
+      flex-wrap: wrap;
+      justify-content: center;  
+    }
   }
 
   &-item {
     max-width: 30rem;
     display: flex;
     flex-direction: column;
+
+    @include respond(tab-phone) {
+      max-width: 40rem;
+      margin-bottom: 6.5rem;
+    } 
+    @include respond(phone) {
+      max-width: 50rem;
+      margin-bottom: 6.5rem;
+    }
 
     &__title {
       font-family: 'Georgia', sans-serif;
@@ -304,6 +419,13 @@ body {
       letter-spacing: 0.06em;
       color: #FFFFFF;
       margin-bottom: 2rem;
+
+      @include respond(tab-phone) {
+        margin-bottom: 3.5rem;
+      }
+      @include respond(phone) {
+          margin-bottom: 3rem;
+      }
     }
 
     &__email {
@@ -318,6 +440,11 @@ body {
       padding-left: 6rem;
       position: relative;
 
+      @include respond(phone) {
+          padding-left: 10rem;
+          font-size: 3rem;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -327,6 +454,15 @@ body {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+
+        @include respond(tab-phone) {
+          width: 5rem;
+          height: 4rem;
+        }
+        @include respond(phone) {
+          width: 10rem;
+          height: 6rem;
+        }
       }
     }
 
@@ -341,6 +477,11 @@ body {
       margin-top: 2.7rem;
       position: relative;
 
+      @include respond(phone) {
+          padding-left: 10rem;
+          font-size: 3rem;
+        }
+
       &::after {
         content: "";
         position: absolute;
@@ -350,10 +491,23 @@ body {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+
+        @include respond(tab-phone) {
+          width: 5rem;
+          height: 4rem;
+        }
+        @include respond(phone) {
+          width: 10rem;
+          height:7rem;
+        }
       }
     }
     &__titleBottom{
       margin-bottom: 1.7rem;
+      @include respond(phone) {
+          margin-bottom: 1.7rem;
+          max-width: 40rem;
+        }
     }
     &__city {
       font-family: 'Georgia', sans-serif;
@@ -367,6 +521,12 @@ body {
       padding-left: 4.2rem;
       position: relative;
 
+      @include respond(phone) {
+         font-size: 12px;
+         padding-left: 30px;
+         margin-bottom: 4rem;
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -376,6 +536,17 @@ body {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+
+        @include respond(tab-phone) {
+          width: 3rem;
+          height: 4rem;
+          
+        }
+        @include respond(phone) {
+          width: 5rem;
+          height: 7rem;
+          
+        }
       }
     }
 
@@ -390,6 +561,12 @@ body {
       padding-left: 4.2rem;
       position: relative;
 
+      @include respond(phone) {
+         font-size: 12px;
+         padding-left: 30px;
+         
+      }
+
       &::after {
         content: "";
         position: absolute;
@@ -399,6 +576,15 @@ body {
         left: 0;
         top: 50%;
         transform: translateY(-50%);
+
+         @include respond(tab-phone) {
+          width: 3rem;
+          height: 4rem;
+        }
+        @include respond(phone) {
+          width: 6rem;
+          height: 7rem;
+        }
       }
     }
   }
