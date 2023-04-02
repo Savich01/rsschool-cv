@@ -826,6 +826,7 @@ body{
     &__titleBottom{
       margin-bottom: 1.7rem;
       @include respond(phone) {
+          margin-bottom: 1.7rem;
           max-width: 40rem;
         }
     }
