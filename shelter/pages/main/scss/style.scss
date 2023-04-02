@@ -1,0 +1,920 @@
+@import 'mixins.scss';
+
+@font-face {
+  font-family: 'Georgia', sans-serif;
+  src: url('../fonts/Georgia.woff2'),
+  url('../fonts/Georgia.woff');
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'Arial', sans-serif;
+  src: url('../fonts/ArialMT.woff2'),
+    url('../fonts/ArialMT.woff');
+  font-display: swap;
+}
+
+// --------------------------
+
+  :root {
+    scroll-behavior: smooth;
+  }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  @include respond(tab-land) {
+    font-size: 60.25%;
+  }
+  @include respond(tab-phone) {
+    font-size: 60%;
+  }
+  @include respond(tab-port) {
+    font-size: 55%;
+  }
+  @include respond(screen) {
+    font-size: 50%;
+  }
+  @include respond(phone) {
+    font-size: 30%;
+  }
+  @include respond(phonescreen) {
+    font-size: 40%;
+  }
+  @include respond(big-screen) {
+    font-size: 75%;
+  }
+}
+
+body{
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.wrapper{
+  background-color: #F6F6F6;
+}
+
+._container{
+  max-width: 128rem;
+  padding: 0rem 4rem;
+  margin: 0 auto;
+}
+
+.header{
+  background: url('../img/bg-01.jpg') 0 0 no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-logo{
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  & span {
+    font-family: 'Georgia', sans-serif;
+    display: block;
+    color: #F1CDB3;
+    font-size: 3.2rem;
+    line-height: 110%;
+    margin-bottom: 1rem;
+  }
+}
+
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.burger-box {
+  width: 3rem;
+  height: 2.2rem;
+  position: relative;
+}
+.burger-box {
+  display: none;
+
+  @include respond(phonescreen) {
+    display: block;
+    cursor: pointer;
+  }
+}
+.burger-box1 {
+  position: absolute;
+  border-top: 1px solid #fff;
+  width: 3rem;
+  height: .2rem;
+  top: 0;
+}
+.burger-box2 {
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  width: 3rem;
+  height: .2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger-box3 {
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  width: 3rem;
+  height: .2rem;
+  bottom: 0;
+
+}
+.menu{
+  @include respond(phonescreen) {
+    display: none;
+  }
+  &-list {
+    display: flex;
+    &__item {
+      border-bottom: .3rem solid transparent;
+      transition: all .3s;
+      position: relative;
+    }
+    &__item:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+    &__item:hover {
+      border-bottom: .3rem solid #F1CDB3;
+    }
+    &__link {
+      color: #CDCDCD;
+      line-height: 160%;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+    &__itemactive {
+      border-bottom: .3rem solid #F1CDB3;
+    }
+  }
+}
+
+.Notonly{
+  &-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include respond(screen) {
+        display: block;
+        width: 100%;
+    }
+    @include respond(phonescreen) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    
+  }
+  &-content{
+    max-width: 46rem;
+    padding-top: 16.3rem;
+    @include respond(screen) {
+      margin: 0 auto;
+      padding-top: 6rem;
+    }
+    @include respond(phonescreen) {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  &-title{
+    font-family: 'Georgia', sans-serif;
+    max-width: 39rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 4.2rem;
+    font-size: 4.4rem;
+  }
+  &-text{
+    color: #CDCDCD;
+    line-height: 160%;
+    margin-bottom: 4.2rem;
+  }
+  &-btn{
+    display: block;
+    max-width: 20.7rem;
+    background-color: #F1CDB3;
+    padding: 1.5rem 4.5rem;
+    border-radius: 10rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    color: #292929;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    @include respond(screen) {
+      margin: 0 auto;
+    }
+
+    &:hover {
+      transform: translateY(-.3rem);
+      background-color: #FDDCC4;
+      box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 1));
+    }
+    &:active {
+      transform: translateY(.1rem);
+      box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, .3))
+    }
+  }
+  &-img{
+    padding-top: 10rem;
+    max-width: 100%;
+    display: block;
+    @include respond(tab-land) {
+        max-width: 60%;
+    }
+    @include respond(screen) {
+      margin: 0rem 0rem 0rem 20rem ;
+      max-width: 70%;
+    }
+  }
+}
+
+.main{
+  background-color: #fff;
+}
+
+.About{
+  &-inner{
+    display: flex;
+    padding: 8rem 0rem 10rem 0rem;
+    justify-content: space-evenly;
+    @include respond(screen) {
+      flex-direction: column;
+    }
+    @include respond(phonescreen) {
+      padding: 2rem 0rem 5rem 0rem;
+    }
+
+    &__content{
+      max-width: 43rem;
+      @include respond(screen) {
+        margin: 0 auto;
+        margin-bottom: 8rem;
+      @include respond(phonescreen) {
+          text-align: center;
+          margin-bottom: 5rem;
+        }
+        
+      }
+    }
+    &__title{
+      font-family: 'Georgia', sans-serif;
+      font-weight: 400;
+      max-width: 35rem;
+      font-size: 3.5rem;
+      line-height: 130%;
+      color: #545454;
+      margin-bottom: 2.5rem;
+    }
+    &__text{
+      color: #4C4C4C;
+      line-height: 160%;
+      margin-bottom: 2.5rem;
+    }
+    &__img {
+      @include respond(screen) {
+        order: 1;
+        max-width: 30%;
+        margin: 0 auto;
+        @include respond(phonescreen) {
+         max-width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.OurFriends{
+  padding: 8rem 0rem 10rem 0rem;
+  background-color: #F6F6F6;
+  &-container {
+    position: relative;
+  }
+  &-title{
+    font-family: 'Georgia', sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    letter-spacing: 0.06em;
+    line-height: 130%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    max-width: 40rem;
+    color: #545454;
+  }
+
+
+  &-button{
+    display: block;
+    max-width: 26.1rem;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #F1CDB3;
+    padding: 1.5rem 4.5rem;
+    border-radius: 10rem;
+    font-family: 'Georgia', sans-serif;
+    font-weight: 400;
+    color: #292929;
+    letter-spacing: 0.06em;
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    margin-top: 3rem;
+
+
+    &:hover {
+      transform: translateY(-.3rem);
+      background-color: #FDDCC4;
+      box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, 1));
+    }
+    &:active {
+      transform: translateY(.1rem);
+      box-shadow: (0rem .4rem .4rem rgba(0, 0, 0, .3))
+    }
+  }
+  
+  &-inner{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 6rem;
+    align-items: center;
+    
+    @include respond(tab-phone) {
+      justify-content: space-evenly;
+    }
+    @include respond(phone) {
+      align-items: flex-end;
+    }
+    
+  }
+  .OurFriends-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include respond(phone) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+  
+  }
+
+
+  .OurFriends-btn__left {
+    display: inline-block;
+    width: 5.2rem;
+    height: 5.2rem;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .2s;
+    @include respond(tab-phone) {
+      width: 5.5rem;
+      height: 5.2rem;
+    }
+    @include respond(screen) {
+      width: 7rem;
+      height: 6.2rem;
+      left: 25%;
+    }
+    @include respond(phone) {
+      width: 9rem;
+      height: 9.2rem;
+      position: absolute;
+      left: 35%;
+    }
+    @include respond(phonescreen) {
+      width: 7rem;
+      height: 7.2rem;
+      left: 25%;
+    }
+    
+
+    &:hover {
+      background-color: #F1CDB3;
+    }
+  }
+  .OurFriends-btn__left-After {
+    background: url('../img/Arrow-left.svg') 0 0 no-repeat;
+    background-position: center;
+  }
+
+  .OurFriends-btn__right {
+    display: inline-block;
+    width: 5.2rem;
+    height: 5.2rem;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .2s;
+    @include respond(tab-phone) {
+      width: 5.5rem;
+      height: 5.2rem;
+    }
+    @include respond(screen) {
+      width: 7rem;
+      height: 6.2rem;
+      right: 25%;
+    }
+    @include respond(phone) {
+      width: 9rem;
+      height: 9.2rem;
+      position: absolute;
+      right: 35%;
+    }
+    @include respond(phonescreen) {
+      width: 7rem;
+      height: 7.2rem;
+      right: 25%;
+    } 
+
+    &:hover {
+      background-color: #F1CDB3;
+    }
+  }
+  .OurFriends-btn__left-Before {
+    background: url('../img/Arrow-right.svg') 0 0 no-repeat;
+    background-position: center;
+  }
+}
+
+.OurFriends-card__item{
+  width: 27rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .3s;
+  border-radius: .9rem;
+  @include respond(phone) {
+      width: 100%;
+      margin-bottom: 6rem;
+  }
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  @include respond(tab-phone) {
+    max-width: 40rem;
+  }
+}
+.OurFriends-card__itemJen {
+  @include respond(phone) {
+      display: none;
+    }
+}
+
+.OurFriends-card__itemwoody{
+  @include respond(tab-phone) {
+    display: none;
+  }
+  
+}
+.OurFriends-card__title{
+  font-size: 2rem;
+  font-family: 'Georgia', sans-serif;
+  font-weight: 400;
+  line-height: 2.3rem;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-bottom: 3rem;
+}
+.OurFriends-card__btn {
+  display: inline-block;
+  padding: 1.5rem 4.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #F1CDB3;
+  transition: all .2s;
+  letter-spacing: 0.06em;
+  margin-bottom: 3rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem;
+  }
+  @include respond(tab-phone) {
+    font-size: 1.7rem;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+  }
+}
+
+.Help{
+  padding: 8rem 0rem 10rem 0rem;
+
+  &-title {
+      max-width: 31rem;
+      display: block;
+      margin: 0 auto;
+      font-family: 'Georgia', sans-serif;
+      font-weight: 400;
+      font-size: 3.5rem;
+      text-align: center;
+      margin-bottom: 6rem;
+      color: #545454;
+      letter-spacing: 0.06em;
+      line-height: 130%;
+    }
+ 
+  &-row {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5.5rem;
+    grid-column-gap: 13rem;
+    grid-row-gap: 5rem;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+    }
+    @include respond(phonescreen) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 5rem;
+      align-items: center;
+    } 
+
+    &__item {
+      max-width: 30rem;
+    }
+    
+    &__img {
+      margin-bottom: 2.5rem;
+    }
+
+    &__text {
+      font-family: 'Georgia', sans-serif;
+      font-size: 20px;
+      line-height: 115%;
+      color: #545454;
+    }
+  }
+}
+  
+
+.Inaddition{
+  background-color: #F6F6F6;
+  padding: 8rem 0rem 10rem 0rem;
+  @include respond(tab-phone) {
+      padding: 5rem 0rem 7rem 0rem;
+  }
+
+  &-inner{
+    max-width: 91.5rem;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+
+    @include respond(tab-phone) {
+      flex-direction: column;
+    } 
+  }
+
+  &-content{
+    margin-left: 2rem;
+
+    @include respond(tab-phone) {
+      order: -1;
+      margin-bottom: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    } 
+  }
+
+  &-title{
+    font-family: 'Georgia', sans-serif;
+    font-weight: 400;
+    color: #545454;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    letter-spacing: 0.06em;
+    max-width: 30rem;
+    line-height: 130%;
+    @include respond(tab-phone) {
+      font-size: 3.6rem;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &-subtitle{
+    font-family: 'Georgia', sans-serif;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 2rem;
+    @include respond(tab-phone) {
+      font-size: 1.5rem;
+      text-align: center;
+      text-align: center;
+    }
+  }
+
+  &-item{
+    margin-left: 2rem;
+    color: #545454;
+  }
+  &-img {
+    max-width: 100%;
+    @include respond(phone) {
+      max-width: 80%;
+    }
+  }
+
+  &-item__row {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #F1CDB3;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-family: 'Georgia', sans-serif;
+    color: #545454;
+    font-size: 2rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    border-radius: .9rem;
+    margin-bottom: 2rem;
+  }
+ 
+  &-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #B2B2B2;
+    font-style: italic;
+    margin-bottom: 2rem;
+    max-width: 35rem;
+    letter-spacing: 0.06em;
+
+    @include respond(phonescreen) {
+      margin-bottom: 0rem;
+    }
+  }  
+}
+
+
+.footer{
+  background: url("../img/footer-bg02.jpg") 0 0 no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 6rem 0rem 0rem 0rem;
+
+  &-img {
+    display: block;
+    @include respond(phone) {
+      max-width: 50%;
+    }
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-phone) {
+      flex-wrap: wrap;
+      justify-content: center;
+    } 
+    @include respond(phone) {
+      flex-wrap: wrap;
+      justify-content: center;  
+    }
+  }
+
+  &-item {
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+
+    @include respond(tab-phone) {
+      max-width: 40rem;
+      margin-bottom: 6.5rem;
+    } 
+    @include respond(phone) {
+      max-width: 50rem;
+      margin-bottom: 6.5rem;
+    }
+
+    &__title {
+      font-family: 'Georgia', sans-serif;
+      font-weight: 400;
+      font-size: 3.5rem;
+      line-height: 130%;
+      letter-spacing: 0.06em;
+      color: #FFFFFF;
+      margin-bottom: 2rem;
+
+      @include respond(tab-phone) {
+        margin-bottom: 3.5rem;
+      }
+      @include respond(phone) {
+          margin-bottom: 3rem;
+      }
+    }
+
+    &__email {
+      font-family: 'Georgia', sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 115%;
+      letter-spacing: 0.06em;
+      color: #F1CDB3;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      padding-left: 6rem;
+      position: relative;
+
+      @include respond(phone) {
+          padding-left: 10rem;
+          font-size: 3rem;
+      }
+
+      
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 3.2rem;
+        background: url('../img/icon-email.svg') 0 0 no-repeat;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include respond(tab-phone) {
+          width: 5rem;
+          height: 4rem;
+        }
+        @include respond(phone) {
+          width: 10rem;
+          height: 6rem;
+        }
+      }
+    }
+
+    &__tel {
+      font-family: 'Georgia', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      letter-spacing: 0.06em;
+      color: #F1CDB3;
+      padding-left: 6rem;
+      margin-top: 2.7rem;
+      position: relative;
+
+      @include respond(phone) {
+          padding-left: 10rem;
+          font-size: 3rem;
+        }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 3.2rem;
+        background: url('../img/icon-phone.svg') 0 0 no-repeat;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include respond(tab-phone) {
+          width: 5rem;
+          height: 4rem;
+        }
+        @include respond(phone) {
+          width: 10rem;
+          height:7rem;
+        }
+      }
+    }
+    &__titleBottom{
+      margin-bottom: 1.7rem;
+      @include respond(phone) {
+          margin-bottom: 1.7rem;
+          max-width: 40rem;
+        }
+    }
+    &__city {
+      font-family: 'Georgia', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      letter-spacing: 0.06em;
+      color: #F1CDB3;
+      margin-bottom: 1.7rem;
+      margin-top: 1.7rem;
+      padding-left: 4.2rem;
+      position: relative;
+
+      @include respond(phone) {
+         font-size: 12px;
+         padding-left: 30px;
+         margin-bottom: 4rem;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2.2rem;
+        height: 3.2rem;
+        background: url('../img/icon-marker.svg') 0 0 no-repeat;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include respond(tab-phone) {
+          width: 3rem;
+          height: 4rem;
+          
+        }
+        @include respond(phone) {
+          width: 5rem;
+          height: 7rem;
+          
+        }
+      }
+    }
+
+    &__street {
+      font-family: 'Georgia', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 115%;
+      letter-spacing: 0.06em;
+      color: #F1CDB3;
+      margin-top: 1.7rem;
+      padding-left: 4.2rem;
+      position: relative;
+
+      @include respond(phone) {
+         font-size: 12px;
+         padding-left: 30px;
+         
+      }
+      
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2.2rem;
+        height: 3.2rem;
+        background: url('../img/icon-marker.svg') 0 0 no-repeat;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include respond(tab-phone) {
+          width: 3rem;
+          height: 4rem;
+        }
+        @include respond(phone) {
+          width: 6rem;
+          height: 7rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
